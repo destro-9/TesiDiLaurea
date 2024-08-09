@@ -3,6 +3,11 @@
 \newacronym{sdk}{SDK}{Software Development Kit}
 \newacronym{uml}{UML}{Unified Modeling Language}
 \newacronym{tsa}{TSA}{Termine solo acronimo}
+\newacronym{mvc}{MVC}{Model View Controller}
+\newacronym{drf}{DRF}{Django REST Framework}
+\newacronym{orm}{ORM}{Object-Relational Mapping}
+\newacronym{dom}{DOM}{Document Object Model}
+\newacronym{pmi}{PMI}{piccole e medie imprese}
 
 % Glossary
 \newglossaryentry{apig}{
@@ -30,4 +35,53 @@
     name={Nome del termine},
     sort=termine senza acronimo,
     description={Descrizione}
+}
+
+\newglossaryentry{ormg}{
+	name={ORM},
+	sort=orm,
+	text={Object-Relational Mapping},
+	description={Tecnica di programmazione che permette di interagire con un database relazionale utilizzando oggetti di programmazione anziché scrivere direttamente query SQL. L'ORM mappa le classi del linguaggio di programmazione ai modelli del database, consentendo di manipolare i dati del database attraverso metodi e proprietà degli oggetti, semplificando la gestione delle operazioni di Create, Read, Update, Delete}
+}
+
+\newglossaryentry{domg}{
+	name={DOM},
+	sort=dom,
+	text={Document Object Model},
+	description={Rappresentazione ad albero di un documento HTML o XML, permette ai linguaggi di programmazione di manipolare la struttura, il contenuto e lo stile di una pagina web in modo dinamico}
+}
+
+\newglossaryentry{virtdom}{
+	name={Virtual DOM},
+	sort=virtdom,
+	text={Virtual Document Object Model},
+	description={copia leggera e in-memory del DOM reale, utilizzata principalmente da librerie come React per ottimizzare le operazioni di aggiornamento dell'interfaccia utente. Le modifiche vengono fatte sul Virtual DOM, e solo le differenze rispetto al DOM reale vengono applicate, migliorando così l'efficienza del rendering}
+}
+
+\newglossaryentry{pip}{
+	name={pip},
+	sort=pip,
+	text={pip},
+	description={Gestore di pacchetti ufficiale di Python, usato per installare, aggiornare e rimuovere pacchetti e librerie. Gestisce le dipendenze e facilita l'integrazione di nuovi pacchetti nei progetti Python}
+}
+
+\newglossaryentry{queryset}{
+	name={QuerySet},
+	sort=queryset,
+	text={QuerySet},
+	description={rappresentazione astratta di una query al database che restituisce una collezione di oggetti del modello su cui è stato invocato. È valutato in modo \textit{lazy}, consentendo di costruire e filtrare dinamicamente le query senza eseguire nell'immediato le operazioni sul database. I QuerySet supportano operazioni come filtraggio, ordinamento e aggregazione.}
+}
+
+\newglossaryentry{playground}{
+	name={playground},
+	sort=playground,
+	text={playground},
+	description={ambiente semplificato e isolato che emula le funzionalità di un sistema reale per consentire lo sviluppo, la sperimentazione di codice senza effetti collaterali su sistemi di produzione. Questi ambienti sono utilizzati per simulare scenari, verificare il comportamento di software e provare nuove idee in un contesto controllato e sicuro.}
+}
+
+\newglossaryentry{pandas}{
+	name={Pandas},
+	sort=Pandas,
+	text={Pandas},
+	description={libreria Python per l'analisi e la manipolazione di dati, offre strutture dati come DataFrame e Series. Fornisce funzionalità avanzate per l'elaborazione e l'analisi di dataset strutturati. Nell'ecosistema Django, Pandas può essere utilizzata efficacemente per elaborare i dati estratti dai modelli Django, trasformando queryset in DataFrame per analisi avanzate o per preparare i dati prima di renderizzarli o esportarli.}
 }
